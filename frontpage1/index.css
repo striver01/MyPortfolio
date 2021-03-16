@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    background-image: url(background.jpg);
+    width: 100%;
+}
+.container2{
+    margin: 15px 15px 0 15px;
+    background-image: url(background.jpg);
+    box-shadow: 0 8px 12px 0 rgb(73, 77, 83);
+}
+.notify{
+    margin: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: wheat;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    animation: slide 15s linear infinite;
+    color: red;
+}
+@keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(90%,0, 0);
+    }
+}
+.container3{
+    margin: 15px 15px 0 15px;
+    padding-bottom: 40px;
+    background-image: url(background.jpg);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgb(73, 77, 83);
+}
+h1{
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    text-shadow: 5px 5px gray;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+h2{
+    font-size: 48px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline;
+
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+h5 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p{
+    font-size: 30px;
+    padding: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+ol li{
+    font-size: 30px;
+    margin-left: 40px;
+    padding: 20px;
+}
+ul li{
+    list-style-type: none;
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 20px;
+}
+#space{
+    padding-top: 30px;
+}
+a{
+    background-color: blanchedalmond;
+    color: red;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: goldenrod;
+    color: blue;
+    font-size: 40px;
+    transition: 1s ease-in-out;
+}
+ul li:hover{
+    background-color: limegreen;
+}
