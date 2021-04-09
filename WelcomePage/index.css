@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: chocolate;
+}
+h1{
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%; 
+    margin: auto;  
+    padding: 20px;
+}
+.container{
+    padding: 60px;
+}
+p{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: burlywood;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
