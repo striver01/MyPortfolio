@@ -1,106 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <!--cdn link to animate css div -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css">
-    <!-- cdn link to activate fontawesome -->
-    <script src="https://kit.fontawesome.com/53c74d146a.js" crossorigin="anonymous"></script>
-    <!-- bootstrap cdn link  -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <title>MyPortfolio</title>
-</head>
-<body>
-    <script src="index.js"></script>
-    <div id="ham" onclick="myfun()"><i class="fas fa-bars"></i></div>
-    <div id="cross" onclick="myfun1()"><i class="fas fa-times"></i></div>
-    <div id="bar"></div>
-    <div class="image"></div>
-    <div class="main">
-        <h1>SHUBH PURWAR</h1>
-        <h6 style="text-align: center; font-weight: 100; letter-spacing: 1px;">Student.Competitive Coder.Web Developer</h6>
-        <h4>"STRIVE UNTIL YOU GET SUCCESS"</h4>
-        <ul class="dis">
-            <li><a href="#abt"><h2>About</h2></a></li>
-            <li><a href="#edu"><h2>Education</h2></a></li>
-            <li><a href="#skill"><h2>Skills</h2></a></li>
-            <li><a href="#pro"><h2>Profiles</h2></a></li>
-            <li><a href="#con"><h2>Contact</h2></a></li>
-        </ul>
-        <ul id="sidebar">
-            <li><a href="#abt" onclick="display()"><h2>About</h2></a></li>
-            <li><a href="#edu" onclick="display()"><h2>Education</h2></a></li>
-            <li><a href="#skill" onclick="display()"><h2>Skills</h2></a></li>
-            <li><a href="#pro" onclick="display()"><h2>Profiles</h2></a></li>
-            <li><a href="#con" onclick="display()"><h2>Contact</h2></a></li>
-        </ul>
-        <div class="content">
-            <h1 id="abt">About</h1>
-            <h3>Hi! I am Shubh. I am a student doing Btech in Computer Science. I love creating websites and also like to practice competitive coding. I love to learn new technologies and frameworks. As my motto clearly says "Never Stop Learning" and it signifies that none is perfect but we all can strive to achieve it.</h3>
-            <a href="#con"><button>To Contact</button></a>
-            <h1 id="edu">EDUCATION</h1>
-            <ul>
-                <li>
-                    <h3>Btech - <a href="">GLA University, Mathura</a></h3>
-                </li>
-                <li>
-                    <h3>Intermediate - <a href="">St. Joseph's College, Prayagraj</a></h3>
-                </li>
-                <li>
-                    <h3>High School - <a href="">St. Joseph's College, Prayagraj</a></h3>
-                </li>
-            </ul>
-            <h1 id="skill">SKILLS</h1>
-            <div class="sidebyside">
-                <div class="tech">
-                    <ul>
-                        <li><h2>Technical Skills</h2></li>
-                        <li><h4>C++</h4></li>
-                        <li><h4>Python</h4></li>
-                        <li><h4>Java</h4></li>
-                        <li><h4>HTML</h4></li>
-                        <li><h4>CSS</h4></li>
-                        <li><h4>JavaScript</h4></li>
-                    </ul>
-                </div>
-                <div class="per">
-                    <ul>
-                        <li><h2>Personal Skills</h2></li>
-                        <li><h4>Problem Solving</h4></li>
-                        <li><h4>Team Management</h4></li>
-                        <li><h4>Communication</h4></li>
-                        <li><h4>Public Speaking</h4></li>
-                        <li><h4>Leadership</h4></li>
-                    </ul>
-                </div>
-            </div>
-            <h1 id="pro">PROFILES</h1>
-            <div class="profile">
-                <ul>
-                    <li><h3><a href="https://www.linkedin.com/in/shubh-purwar-381894195/">LinkedIn</a></h3></li>
-                    <li><h3><a href="https://github.com/striver01">GitHub</a></h3></li>
-                    <li><h3><a href="https://www.codechef.com/users/striver_01">CodeChef</a></h3></li>
-                    <li><h3><a href="https://www.hackerrank.com/striver_01">Hackerrank</a></h3></li>
-                </ul>
-            </div>
-            <h1 id="con">CONTACT</h1>
-            <div class="contact">
-                <ul>
-                    <li><h3><i class="fas fa-envelope"></i> - <a href="">xyz@gmail.com</a></h3></li>
-                    <li><h3><i class="fab fa-instagram-square"></i> - <a href="https://www.instagram.com/_._striver_01_._/">Instagram</a></h3></li>
-                    <li><h3><i class="fab fa-facebook-square"></i> - <a href="https://www.facebook.com/profile.php?id=100011012651514">Facebook</a></h3></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#ham{
+    font-size: 40px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    display: none;
+}
+#cross{
+    font-size: 40px;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    display: none;
+    z-index: 3;
+}
+#ham:hover{
+    cursor: pointer;
+    font-size: 45px;
+    transition: 2s;
+}
+.image{
+    background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEZsuSvFC8oUw/profile-displayphoto-shrink_800_800/0/1621444142925?e=1626912000&v=beta&t=mGvZZ1flt2eUd2E2VEvmkUokHW8q-K94-XXnP201M78");
+    background-size: 100% 100%;
+    width: 40%;
+    margin-left: 5%;
+    height: 100vh;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+}
+.main{
+    position: relative;
+    left: 50%;
+    width: 50%;
+}
+.main h1{
+    text-align: center;
+    margin-top: 15vh;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.main h4{
+    font-weight: 100;
+    margin-top: 5vh;
+    text-align: center;
+    font-style: italic;
+}
+.main h2{
+    font-weight: 100;
+    margin-top: 5vh;
+    text-align: center;
+    font-style: italic;
+}
+.main ul li{
+    line-height: 20px;
+    list-style-type: none;
+    color: black;
+}
+.main ul li a{
+    text-decoration: none;
+    color: brown;
+}
+.main ul li a:hover{
+    text-transform: uppercase;
+}
+.main ul li a h2{
+    font-style: normal;
+}
+.content h1{
+    padding: 50px;
+    font-weight: 400;
+}
+.content h3{
+    font-weight: 200;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.content a button{
+    margin-top: 50px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 20px;
+    background-color: darkblue;
+    border-radius: 2px;
+}
+.content a button:hover{
+    box-shadow: 3px 3px black;
+}
+.content ul li{
+    margin-top: 30px;
+}
+.sidebyside{
+    display: flex;
+    justify-content: center;
+}
+.tech{
+    margin-left: auto;
+    margin-right: auto;
+}
+.per{
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile ul{
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    height: 40vh;
+}
+.footer p{
+    margin-left: 10%;
+}
+.footer p input{
+    margin-top: 2%;
+    text-align: start;
+}
+.footer h4{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+}
+#bar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(199, 195, 195);
+    height: 100vh;
+    display: none;
+}
+#sidebar{
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%,-30%);
+    z-index: 2;
+    top: 0;
+    display: none;
+}
+.sidebar li{
+    padding-bottom: 20px;
+}
+@media screen and (Max-width:850px){
+    #ham{
+        display: block;
+    }
+    .dis{
+        display: none;
+    }
+    .image{
+        width: 80%;
+        position: relative;
+        margin: auto;
+    }
+    .main{
+        width: 90%;
+        position: static;
+        margin: auto;
+    }
+    .main h1{
+        margin-top: 5vh;
+    }
+    .contact ul{
+        margin-left: 20%;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+@media screen and (Max-width:400px) {
+    .main h1{
+        font-size: 1.5rem;
+        margin-top: 5vh;
+    }
+    .main p{
+        font-size: 8px;
+    }
+}
