@@ -23,3 +23,11 @@ function myfun1(){
     btn.style.display = "none";
     show.style.display = "none";
 }
+function display(){
+    var crss = document.getElementById('cross');
+    var sidebar = document.getElementById('sidebar');
+    var bar = document.getElementById('bar');
+    crss.style.display = "none";
+    sidebar.style.display = "none"; 
+    bar.style.display = "none";
+}
