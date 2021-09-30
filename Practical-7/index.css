@@ -7,11 +7,12 @@
   background-color: gray;
   width: 100%;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
 }
 h1 {
   color: white;
   font-size: 46px;
+  margin: 20px;
 }
 .banner {
   background-color: rgb(194, 236, 131);
@@ -46,8 +47,11 @@ h1 {
   background-color: red;
   text-align: center;
   width: 50%;
-  height: 300px;
-  padding-top: 150px;
+  height: 450px;
+}
+.main h1 {
+  line-height: 450px;
+  margin: 0;
 }
 .article {
   display: flex;
@@ -61,6 +65,9 @@ h1 {
   height: 147px;
   margin-left: 10px;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .square {
   display: flex;
@@ -76,5 +83,7 @@ h1 {
   background-color: rgb(3, 3, 77);
   text-align: center;
   height: 125px;
-  padding: 0.25px;
+}
+.footer h1 {
+  line-height: 125px;
 }

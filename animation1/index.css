@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ffff;
+  transition: 2s all;
+}
+.box:hover {
+  /* transform: translate(200px, 100px); */
+  /* transform: rotate(120deg); */
+  transform: skew(40deg, 180deg);
+  background: red;
+}

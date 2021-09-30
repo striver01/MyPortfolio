@@ -1,185 +1,184 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#ham{
-    font-size: 40px;
-    position: absolute;
-    top: 3%;
-    right: 5%;
+#ham {
+  font-size: 40px;
+  position: fixed;
+  top: 3%;
+  right: 5%;
+  display: none;
+}
+#cross {
+  font-size: 40px;
+  position: fixed;
+  top: 3%;
+  right: 5%;
+  display: none;
+  z-index: 3;
+}
+#ham:hover {
+  cursor: pointer;
+  font-size: 45px;
+  transition: 2s;
+}
+.image {
+  background-image: url("Linkedin\ Profile\ Photo.jfif");
+  background-size: 100% 100%;
+  width: 40%;
+  margin-left: 5%;
+  height: 100vh;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+}
+.main {
+  position: relative;
+  left: 50%;
+  width: 50%;
+}
+.main h1 {
+  text-align: center;
+  margin-top: 15vh;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+.main h4 {
+  font-weight: 100;
+  margin-top: 5vh;
+  text-align: center;
+  font-style: italic;
+}
+.main h2 {
+  font-weight: 100;
+  margin-top: 5vh;
+  text-align: center;
+  font-style: italic;
+}
+.main ul li {
+  line-height: 20px;
+  list-style-type: none;
+  color: black;
+}
+.main ul li a {
+  text-decoration: none;
+  color: brown;
+}
+.main ul li a:hover {
+  text-transform: uppercase;
+}
+.main ul li a h2 {
+  font-style: normal;
+}
+.content h1 {
+  padding: 50px;
+  font-weight: 400;
+}
+.content h3 {
+  font-weight: 200;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.content a button {
+  margin-top: 50px;
+  padding: 5px 15px;
+  color: white;
+  font-size: 20px;
+  background-color: darkblue;
+  border-radius: 2px;
+}
+.content a button:hover {
+  box-shadow: 3px 3px black;
+}
+.content ul li {
+  margin-top: 30px;
+}
+.sidebyside {
+  display: flex;
+  justify-content: center;
+}
+.tech {
+  margin-left: auto;
+  margin-right: auto;
+}
+.per {
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile ul {
+  text-align: center;
+}
+.footer {
+  background-color: black;
+  height: 40vh;
+}
+.footer p {
+  margin-left: 10%;
+}
+.footer p input {
+  margin-top: 2%;
+  text-align: start;
+}
+.footer h4 {
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+}
+#bar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(199, 195, 195);
+  height: 100vh;
+  display: none;
+}
+#sidebar {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 2;
+  display: none;
+}
+.sidebar li {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  #ham {
+    display: block;
+  }
+  .dis {
     display: none;
-}
-#cross{
-    font-size: 40px;
-    position: absolute;
-    top: 3%;
-    right: 5%;
-    display: none;
-    z-index: 3;
-}
-#ham:hover{
-    cursor: pointer;
-    font-size: 45px;
-    transition: 2s;
-}
-.image{
-    background-image: url("https://media-exp1.licdn.com/dms/image/C4E03AQEZsuSvFC8oUw/profile-displayphoto-shrink_800_800/0/1621444142925?e=1626912000&v=beta&t=mGvZZ1flt2eUd2E2VEvmkUokHW8q-K94-XXnP201M78");
-    background-size: 100% 100%;
-    width: 40%;
-    margin-left: 5%;
-    height: 100vh;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-}
-.main{
+  }
+  .image {
+    width: 80%;
     position: relative;
-    left: 50%;
-    width: 50%;
-}
-.main h1{
-    text-align: center;
-    margin-top: 15vh;
-    font-weight: 500;
-    font-size: 50px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
-}
-.main h4{
-    font-weight: 100;
+    margin: auto;
+  }
+  .main {
+    width: 90%;
+    position: static;
+    margin: auto;
+  }
+  .main h1 {
     margin-top: 5vh;
-    text-align: center;
-    font-style: italic;
-}
-.main h2{
-    font-weight: 100;
-    margin-top: 5vh;
-    text-align: center;
-    font-style: italic;
-}
-.main ul li{
-    line-height: 20px;
-    list-style-type: none;
-    color: black;
-}
-.main ul li a{
-    text-decoration: none;
-    color: brown;
-}
-.main ul li a:hover{
-    text-transform: uppercase;
-}
-.main ul li a h2{
-    font-style: normal;
-}
-.content h1{
-    padding: 50px;
-    font-weight: 400;
-}
-.content h3{
-    font-weight: 200;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-}
-.content a button{
-    margin-top: 50px;
-    padding: 5px 15px;
-    color: white;
-    font-size: 20px;
-    background-color: darkblue;
-    border-radius: 2px;
-}
-.content a button:hover{
-    box-shadow: 3px 3px black;
-}
-.content ul li{
-    margin-top: 30px;
-}
-.sidebyside{
-    display: flex;
-    justify-content: center;
-}
-.tech{
-    margin-left: auto;
-    margin-right: auto;
-}
-.per{
-    margin-left: auto;
-    margin-right: auto;
-}
-.profile ul{
-    text-align: center;
-}
-.footer{
-    background-color: black;
-    height: 40vh;
-}
-.footer p{
-    margin-left: 10%;
-}
-.footer p input{
-    margin-top: 2%;
-    text-align: start;
-}
-.footer h4{
-    color: white;
-    text-align: center;
-    margin-top: 2%;
-}
-#bar{
-    position: fixed;
-    z-index: 1;
+  }
+  .contact ul {
+    margin-left: 20%;
+  }
+  .footer {
     width: 100%;
-    background-color: rgb(199, 195, 195);
-    height: 100vh;
-    display: none;
+  }
 }
-#sidebar{
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    transform: translate(-50%,-30%);
-    z-index: 2;
-    top: 0;
-    display: none;
-}
-.sidebar li{
-    padding-bottom: 20px;
-}
-@media screen and (Max-width:1000px){
-    #ham{
-        display: block;
-    }
-    .dis{
-        display: none;
-    }
-    .image{
-        width: 80%;
-        position: relative;
-        margin: auto;
-    }
-    .main{
-        width: 90%;
-        position: static;
-        margin: auto;
-    }
-    .main h1{
-        margin-top: 5vh;
-    }
-    .contact ul{
-        margin-left: 20%;
-    }
-    .footer{
-        width: 100%;
-    }
-}
-@media screen and (Max-width:400px) {
-    .main h1{
-        font-size: 1.5rem;
-        margin-top: 5vh;
-    }
-    .main p{
-        font-size: 8px;
-    }
+@media screen and (max-width: 400px) {
+  .main h1 {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+  }
+  .main p {
+    font-size: 8px;
+  }
 }
